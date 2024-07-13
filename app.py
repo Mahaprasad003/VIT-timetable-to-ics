@@ -5,6 +5,7 @@ from icsgenerator import create_ics_file
 
 def main():
     st.title("VIT Timetable to ICS Converter")
+    st.text('You can then transfer to calendar of your choice.')
 
     name = st.text_input("Enter your name:")
     st.text("Data is not stored. Your name will be used as the name for the generated file.")
