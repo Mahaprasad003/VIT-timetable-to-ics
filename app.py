@@ -7,10 +7,15 @@ def main():
     st.title("VIT Timetable to ICS Converter")
 
     name = st.text_input("Enter your name:")
-    st.text("None of your data is stored. Your name will be used as the name for the generated file.")
+    st.text("Data is not stored. Your name will be used as the name for the generated file.")
 
     # Timetable input
     st.header("Step 1: Input Your Timetable")
+
+    video_file = open('tutorial.mp4', 'rb')
+    video_bytes = video_file.read()
+    st.video(video_bytes)
+
     timetable_text = st.text_area("Paste your timetable here:", height=300)
 
     # Date input
@@ -98,6 +103,6 @@ def main():
                     )
             else:
                 st.warning("Please select valid semester dates.")
-
+    st.text('Made with ♥ with Claude and Coffee.')
 if __name__ == "__main__":
     main()
