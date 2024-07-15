@@ -1,6 +1,8 @@
 
 # Timetable to ICS converter
 
+Link to live website: https://vit-timetable.streamlit.app/
+
 Mostly solving a personal problem since I use Google Calendar a lot and wanted the timetable to show up on it.
 
 Unexpected advantage for ios folks:
