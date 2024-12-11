@@ -21,6 +21,8 @@ def main():
 
     # Date input
     st.header("Step 2: Set Semester Dates")
+    st.text("Start from a monday. There is some bug that messes up if you start from any other day.")
+    st.text("New semester starts from 13th(Friday). But set the date for 16th(Monday). ")
     col1, col2 = st.columns(2)
     with col1:
         start_date = st.date_input("Semester Start Date", datetime(2024, 7, 15))
